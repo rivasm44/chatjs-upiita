@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Chat en Vivo con Web Sockets</title>
+		<link href="css/estilos.css" rel="stylesheet"/>
+		<script src="javascript/jquery-1.10.2.min.js"></script>
+		<!-- en la raiz del proyecto- -->
+		<script src="/socket.io/socket.io.js"></script>
+
+		<script type="text/javascript">
+		 
+		/*abrimos l conexion, io se define cuando importo socket io*/
+	/*	var socket = io.connect(location.origin);
+		
+		$(function(){
+            $("#boton").click(function(){
+               
+                var nombre = $("#nombre-usuario").val();
+                var mensaje = $("#mensaje-usuario").val();
+                socket.emit("mensaje_al_servidor",{
+                    nombre: nombre,
+                    mensaje: mensaje
+                });
+            });
+            */
+            /*escucho el mensaje al cliente*/
+         /*   socket.on("mensaje_al_cliente", function(datosServidor){
+                var nombre = datosServidor.nombre;
+                var mensaje =  datosServidor.mensaje;
+                /*hay que validar el mensaje del lado del servidor*/
+                var caja = "<div class='mensaje'> <span>" + nombre + " dice: </span> "+ mensaje +"</div>";
+                $("#mensajes").append(caja);
+            });
+		});		*/
+			
+		</script>
+	</head>
+	<body>
+		<div id="chat">
+			<!-- titulos del chat -->
+			<h1>Chat en Vivo</h1>
+			<h4>Mensajes de los usuarios:</h4>
+
+			<!-- caja de mensajes de los nuevos usuarios -->
+			<div id="mensajes">
+			    <!--aqui se agragan las cajas mensaje-->
+			</div>
+			
+			<!-- mensaje del usuario -->
+			<p>
+				<label>Mensaje:</label>
+				<input id="mensaje-usuario" type="text" placeholder="Escriba su mensaje aqui"/>
+			</p>
+
+			<!-- nombre del usuario -->
+			<p>
+				<label>Usuario:</label>
+				<input id="nombre-usuario" type="text" placeholder="Su nombre aqui"/>
+			</p>
+
+			<!-- boton de enviar -->
+			<button id="boton">
+				Enviar
+			</button>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+	font-family: "Orbitron";
+	font-size:18px;
+}
+
+#chat {
+	width: 80%;
+	background-color: #3b3b3b;	
+	padding: 1.5em;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+h1, h4, p {
+	color: white;
+}
+
+h4 {
+	margin-bottom: 1em;
+}
+
+#mensajes, #mensaje-usuario, #nombre-usuario {
+	background-color: white;	
+	min-height: 1em;
+}
+
+.mensaje {
+	padding: 5px;
+	border-bottom: 1px #3b3b3b solid;
+}
+
+span {
+	color: red;
+}
+
+#mensaje-usuario {
+	padding: 0px;
+	width: 100%;
+	border-width: 0px;
+	margin-bottom: 3px;
+}
